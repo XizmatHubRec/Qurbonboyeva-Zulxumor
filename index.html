@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Vizitkasi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar a {
+            color: white !important;
+        }
+        .jumbotron {
+            background: url('https://aleksundra.com/wp-content/uploads/2015/12/%D1%84%D0%BE%D0%BD-%D1%88%D0%B0%D0%BF%D0%BA%D0%B0-2.jpg') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+        .jumbotron h1 {
+            font-size: 3em;
+            animation: fadeIn 3s ease-out;
+        }
+        .jumbotron p {
+            font-size: 1.5em;
+            animation: fadeIn 4s ease-out;
+        }
+        .about-me {
+            background-color: #fff;
+            padding: 50px 0;
+            animation: fadeIn 3s ease-out;
+        }
+        .about-me img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            background-color: #ecf0f1;
+            padding: 50px 0;
+        }
+        .card-deck .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-deck .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                text-align: center;
+            }
+            .jumbotron h1 {
+                font-size: 2em;
+            }
+            .jumbotron p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Restoran Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Bosh Sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Biz Haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Xizmatlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Aloqa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron / Hero Section -->
+    <section id="home" class="jumbotron text-center">
+        <div>
+            <h1>Bizning Cafe-ga Xush Kelibsiz</h1>
+            <p>Eng Yaxshi Taomlar, Eng Yaxshi Xizmat</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Biz Bilan Bog'lanish</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me text-center">
+        <div class="container">
+            <h2>MEn haqimda</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="avatar.jpg" alt="Sizning Suratingiz" class="img-fluid" id="about-image">
+                </div>
+                <div class="col-md-8">
+                    <p id="about-text" class="lead">Men hemisda 21 -nomerda turaman. Qurbonboyeva Zulxumor  Farhod qizi. Qoraqolpog'iston Respublikasi Amudaryo tumani Olmozor MFY da yashayman .Oilaliman.2 nafar farzandim bor.Turmush o'rtog'im bn xudoga shukur juda baxtlimiz.Farzandlarim Amirxon 8 yoshda ,Asilbek 3 yoshda .Tez yordamda navbatchi sanitarka lavozimida ishlayman.Turmush o'rtog'im Usta .Oddiy oilada baxtli hayot kechiryapmiz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services text-center">
+        <div class="container">
+            <h2>Bizning Xizmatlarimiz</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=a53e747a8787e7530573ea157176dc522e40530b-12753003-images-thumbs&n=13" class="card-img-top" alt="Xizmat 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mazali Taomlar</h5>
+                        <p class="card-text">Eng yaxshi oshpazlarimiz tomonidan tayyorlangan turli xil taomlardan bahramand bo'ling.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cache.marriott.com/content/dam/marriott-renditions/PARMD/parmd-etoile-8284-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" class="card-img-top" alt="Xizmat 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jonli Musiqa</h5>
+                        <p class="card-text">Har kecha iste'dodli musiqachilarning jonli chiqishlaridan bahramand bo'ling.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gdebar.ru/data/app/bar/img/gallery/924/93326.webp" class="card-img-top" alt="Xizmat 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Katering Xizmatlari</h5>
+                        <p class="card-text">Biz tadbirlar, to'ylar va partiyalar uchun catering xizmatlarini taqdim etamiz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+        <div class="container">
+            <h2>Aloqa</h2>
+            <p>Biz bilan bog'lanish yoki rezervasyon qilish uchun, iltimos, quyidagi ma'lumotlarga murojaat qiling!</p>
+            <p>Email: contact@restorancafe.com</p>
+            <p>Telefon: (93) 092 33 24</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restoran Cafe. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Dynamic Effects -->
+    <script>
+        window.onload = function() {
+            // Men haqimda matnini dinamik ko'rsatish
+            const aboutText = document.getElementById("about-text");
+            const aboutImage = document.getElementById("about-image");
+
+            // 3 soniyadan so'ng matn va suratni ko'rsatish
+            setTimeout(() => {
+                aboutText.style.transition = "opacity 2s";
+                aboutText.style.opacity = 1;
+
+                aboutImage.style.transition = "transform 2s";
+                aboutImage.style.transform = "scale(1.1)";
+            }, 3000);
+        };
+    </script>
+
+</body>
+</html>
